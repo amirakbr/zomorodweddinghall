@@ -1,12 +1,16 @@
+import { Palace } from "../Icons/Icons";
 const Header = () => {
     return(
-        <div className="flex items-center gap-x-2">
-            <div className="relative">
-                <div className="absolute">
-
-                </div>
+        <header className="flex items-center gap-x-8 px-8 py-2 bg-[#bbffce]">
+            <div className="relative flex items-center gap-x-4">
+               <div className="w-[3rem]">
+                    <img className="object-cover object-center" src="./Assets/Emerald.png" />
+               </div>
+               <span className="text-xl text-[#047508]">
+                    باغ تالار زمرد
+               </span>
             </div>
-            <div className="flex items-center gap-x-2">
+            <div className="flex items-center gap-x-6 text-lg">
                 <a>
                     درباره ما
                 </a>
@@ -23,7 +27,7 @@ const Header = () => {
                     همراهان ما
                 </a>
             </div>
-        </div>
+        </header>
     )
 }
 export default Header ; 
