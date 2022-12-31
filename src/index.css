@@ -9,6 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(239,255,239);
+background: linear-gradient(5deg, rgba(239,255,239,1) 27%, rgba(255,255,255,1) 40%, rgba(202,255,203,1) 100%);
 }
 
 code {
@@ -26,4 +28,39 @@ input:focus {
 }
 footer{
   background-color: rgb(40, 40, 40);
+}
+.swiper-slide-active > .relative > .herotitle {
+  top : 100% ; 
+  opacity: 0;
+  animation: herotitle 1s .5s ease-in-out forwards;
+} 
+@keyframes herotitle {
+  0%{
+    top : 100% ; 
+    opacity: 0;
+  }
+  100%{
+    top : 50% ; 
+    opacity: 1;
+  }
+}
+.swiper-button-next ,  .swiper-button-prev {
+  color: #009B77 !important;
+  backdrop-filter: blur(4px);
+}
+.swiper-button-prev {
+  height: 100% !important;
+  bottom: 0 !important;
+  top: unset !important;
+  padding: 0 1rem !important;
+  background: #4e4e4e4d !important;
+  right: 0 !important;
+}
+.swiper-button-next {
+  height: 100% !important;
+  bottom: 0 !important;
+  top: unset !important;
+  padding: 0 1rem !important;
+  background: #4e4e4e4d !important;
+  left : 0 !important;  
 }

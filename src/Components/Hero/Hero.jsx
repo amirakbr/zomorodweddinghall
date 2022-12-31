@@ -15,12 +15,12 @@ const initialValue = [
     {
         id : 1 , 
         imageUrl : './Assets/emrlad/Hero/2.jpg' , 
-        text : 'بهترین برگزار کننده مجالس عروسی در مشهد' , 
+        text : 'برگزاری موفق بیش از سیصد مجلس' , 
     } , 
     {
         id : 2 , 
         imageUrl : './Assets/emrlad/Hero/3.jpg' , 
-        text : 'بهترین برگزار کننده مجالس عروسی در مشهد' , 
+        text : 'مفتخر به میزبانی از مهمانی سی و دومین مجلس کشور های اسلامی' , 
     }
 ]
 
@@ -49,16 +49,16 @@ const Hero = () => {
                             <SwiperSlide>
                         <div className="relative h-[30rem]">
                                 <img aria-label={item.text} alt={item.id} className="h-[100%] w-full object-cover object-[bottom]" src={item.imageUrl} />
-                                <div className="absolute 
-                                bg-[#50C878] p-4 rounded flex flex-col items-center top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
+                                <div className="herotitle absolute 
+                                bg-[#005c4670] backdrop-blur-sm py-6 px-10 rounded flex flex-col items-center top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
                                     <h1 className="text-2xl">
                                         قصر مجلل زمرد
                                     </h1>
-                                    <h2 className="text-xl">
+                                    <span className="text-xl font-semibold mt-4 max-w-[25rem] text-justify">
                                         {
                                             item.text
                                         }
-                                    </h2>
+                                    </span>
                                 </div>
                             </div>
                         </SwiperSlide>

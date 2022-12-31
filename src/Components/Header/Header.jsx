@@ -10,20 +10,20 @@ const Header = () => {
                     باغ تالار زمرد
                </span>
             </div>
-            <div className="flex items-center gap-x-6 text-lg">
-                <a>
+            <div className="flex items-center gap-x-6 text-lg realative mt-1">
+                <a className="flex flex-col after:block after:content-['_'] after:border-b-2 after:border-b-[black] after:top-1 after:relative after:scale-0 after:transation-all after:duration-[.3s] after:hover:scale-[1] cursor-pointer">
                     درباره ما
                 </a>
-                <a>
+                <a className="flex flex-col after:block after:content-['_'] after:border-b-2 after:border-b-[black] after:top-1 after:relative after:scale-0 after:transation-all after:duration-[.3s] after:hover:scale-[1] cursor-pointer">
                     گالری تصاویر
                 </a>
-                <a>
+                <a className="flex flex-col after:block after:content-['_'] after:border-b-2 after:border-b-[black] after:top-1 after:relative after:scale-0 after:transation-all after:duration-[.3s] after:hover:scale-[1] cursor-pointer">
                     خدمات
                 </a>
-                <a>
+                <a className="flex flex-col after:block after:content-['_'] after:border-b-2 after:border-b-[black] after:top-1 after:relative after:scale-0 after:transation-all after:duration-[.3s] after:hover:scale-[1] cursor-pointer">
                     خدمات برگزیده
                 </a>
-                <a>
+                <a className="flex flex-col after:block after:content-['_'] after:border-b-2 after:border-b-[black] after:top-1 after:relative after:scale-0 after:transation-all after:duration-[.3s] after:hover:scale-[1] cursor-pointer">
                     همراهان ما
                 </a>
             </div>
