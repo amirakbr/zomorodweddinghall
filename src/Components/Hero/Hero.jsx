@@ -47,14 +47,14 @@ const Hero = () => {
                         {
                             initialValue.map((item , id)=>
                             <SwiperSlide>
-                        <div className="relative h-[30rem]">
+                        <div className="relative h-[20rem] sm:h-[30rem]">
                                 <img aria-label={item.text} alt={item.id} className="h-[100%] w-full object-cover object-[bottom]" src={item.imageUrl} />
                                 <div className="herotitle absolute 
-                                bg-[#005c4670] backdrop-blur-sm py-6 px-10 rounded flex flex-col items-center top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
-                                    <h1 className="text-2xl">
+                                bg-[#a2dfd070] backdrop-blur-sm py-6 px-10 rounded flex flex-col items-center top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
+                                    <h1 className="text-center text-2xl font-bold">
                                         قصر مجلل زمرد
                                     </h1>
-                                    <span className="text-xl font-semibold mt-4 max-w-[25rem] text-justify">
+                                    <span className="hidden sm:block text-lg font-base mt-4 max-w-[25rem] text-justify">
                                         {
                                             item.text
                                         }

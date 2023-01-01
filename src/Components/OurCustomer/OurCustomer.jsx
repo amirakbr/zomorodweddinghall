@@ -9,11 +9,11 @@ const OurCustomerDescriptionClassNames = "text-lg" ;
 
 const OurCustomer =() => {
     return(
-        <div className="flex flex-col items-center gap-y-8 container mx-auto mt-10">
-            <h4 className="text-2xl">
+        <div id="supporters" className="flex flex-col items-center container mx-auto mt-8">
+            <h3 className="text-2xl font-semibold mt-10">
                 برخی از همراهان همیشگی ما
-            </h4>
-            <div className="flex flex-wrap items-center justify-center gap-[3rem]">
+            </h3>
+            <div className="flex flex-wrap items-center justify-center gap-[3.5rem] mt-[3rem] px-8">
                 <div className={OurCustomerContainerClassNames} style={{width : '7rem'}}>
                     <DocNekoiHolding />
                     

@@ -1,26 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgb(239,255,239);
-background: linear-gradient(5deg, rgba(239,255,239,1) 27%, rgba(255,255,255,1) 40%, rgba(202,255,203,1) 100%);
+  font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(141deg , rgba(0, 255, 149, 0.016) 0% , #eaeaea 51% , rgba(0, 255, 149, 0.016) 75%);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-input
- {
+input{
   transition: all .3s ease-in-out;
- }
+}
 input:focus {
   outline: none;
   border: .2rem solid green;
@@ -63,4 +60,41 @@ footer{
   padding: 0 1rem !important;
   background: #4e4e4e4d !important;
   left : 0 !important;  
+}
+
+
+
+
+
+.about-us-article {
+  background-image: linear-gradient(to right, #ffffff, #40e49547, #ffffff, #ffffff);
+    background-size: 300% 100%;
+  transition: all .5s ease-in-out;
+}
+.about-us-article:hover {
+  background-position: 50% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.feedBack__container{
+  backdrop-filter: blur(4px);
+  background-color: rgba(220, 220, 220, 0.135);
+}
+
+.hamburgermenue {
+  animation: hamburgermenue .5s ease-in-out forwards;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+@keyframes hamburgermenue {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }

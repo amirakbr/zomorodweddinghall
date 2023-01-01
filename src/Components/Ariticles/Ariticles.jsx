@@ -26,41 +26,41 @@ const Ariticles =() => {
     },[])
     return(
         <div className="flex flex-col container mx-auto">
-            <h4 className="text-2xl">
+            <h3 className="text-2xl font-semibold mt-10">
                 آخرین مقالات
-            </h4>
+            </h3>
             {
                 loading === true ? 
                 <>
                     <Spinner />
                 </> : 
                 <>
-                    <div className="grid grid-cols-[1fr_1fr] gap-[2rem]">
+                    <div className="grid grid-cols-[1fr] lg:grid-cols-[1fr_1fr] gap-[2rem] mt-[4rem] px-8">
                             {
                                 data.map((item , id)=> 
-                                    <div className="flex flex-col overflow-hidden rounded-lg p-2">
+                                    <div className="flex flex-col overflow-hidden rounded-lg cursor-pointer shadow-[0rem_0rem_1.1rem_0rem_#c7c7c7] transation-all duration-[.5s] translate-y-[0rem] hover:translate-y-[-1rem] hover:shadow-[0rem_0rem_1.1rem_.1rem_#6c6c6c] ">
                                         <div className="w-full h-[20rem] relative">
                                             <img src={item.avatar} className="w-full h-full object-center object-cover" />
-                                            <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center transation-all duration-[.3s] opacity-[0] hover:opacity-[1]">
-                                                <span className="text-xl bg-[forestgreen] text-[white] rounded p-4">
+                                            <div className="absolute w-full h-full top-0 left-0 flex items-center justify-center opacity-0 hover:opacity-[1] transation-all duration-[.2s]">
+                                                <a className="py-4 px-6 bg-[#42424285] backdrop-blur-sm rounded transation-all duration-[.2s]   hover:scale-[1.1] scale-[1] text-[white]">
                                                     ادامه مطلب
-                                                </span>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div className="flex justify-center mt-4">
-                                            <p className="text-xl">
+                                        <div className="flex justify-center mt-4 p-2">
+                                            <p className="text-lg">
                                                 {
                                                     item.name
                                                 }
                                             </p>
                                         </div>
-                                        <div className="flex justify-between items-center">
-                                            <span>
+                                        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center p-2 gap-4 flex-wrap">
+                                            <span className="text-sm text-gray-500">
                                                 {
                                                     item.createdAt
                                                 }
                                             </span>
-                                            <a className="text-xl bg-[forestgreen] text-[white] rounded p-2">
+                                            <a className="bg-[forestgreen] text-[white] rounded py-1 px-4">
                                                 ادامه مطلب
                                             </a>
                                         </div>
